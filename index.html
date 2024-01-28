@@ -22,14 +22,34 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/405dcb50d6.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Frontend Mentor | FAQ accordion</title>
     <link rel="stylesheet" href="src/styles.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <div id="svg-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1440"
+        height="320"
+        fill="none"
+        viewBox="0 0 1440 320"
+      ></svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="375"
+        height="232"
+        fill="none"
+        viewBox="0 0 375 232"
+      ></svg>
+    </div>
     <div class="container faqs-body">
-      <h1>FAQs</h1>
+        <h1><i class="fa-solid fa-star faq-icon"></i> FAQs</h1>
       <h4>What is Frontend Mentor, and how will it help me?</h4>
       <p>
         Frontend Mentor offers realistic coding challenges to help developers
@@ -50,11 +70,11 @@
         employers!
       </p>
       <h4>How can I get help if I'm stuck on a Frontend Mentor challenge?</h4>
-      <h4>
+      <p>
         The best place to get help is inside Frontend Mentor's Discord
         community. There's a help channel where you can ask questions and seek
         support from other community members.
-      </h4>
+      </p>
     </div>
     <footer>
       <div class="attribution">
@@ -62,9 +82,15 @@
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          class="text-white"
+          target="_blank"
+          class="text-black"
           >Frontend Mentor</a
-        >. Coded by <a href="#" class="text-white">Brenda Frenjo</a>.
+        >. Coded by
+        <a
+          href="https://github.com/Brendafrenjo/faq-accordion-main"
+          class="text-black"
+          >Brenda Frenjo</a
+        >.
       </div>
     </footer>
     <script src="src/app.js"></script>
