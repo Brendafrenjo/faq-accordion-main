@@ -63,6 +63,13 @@ p {
   font-size: 44px;
 }
 
+.faq-icon-icon {
+  cursor: pointer;
+}
+.faq-icon-icon span {
+  margin: 0 5px;
+}
+
 #svg-container {
   position: absolute;
   top: 0;
