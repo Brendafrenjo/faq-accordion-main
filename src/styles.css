@@ -31,8 +31,8 @@ h4 {
 }
 
 p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -68,6 +68,10 @@ p {
 }
 .faq-icon-icon span {
   margin: 0 5px;
+}
+
+.non-active {
+  display: none;
 }
 
 #svg-container {
