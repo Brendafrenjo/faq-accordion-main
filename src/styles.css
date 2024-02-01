@@ -1,9 +1,9 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(
     hsl(292, 42%, 14%) 0%,
-    hsl(292, 42%, 14%) 33%,
-    hsl(275, 100%, 97%) 33%,
+    hsl(292, 42%, 14%) 40%,
+    hsl(275, 100%, 97%) 40%,
     hsl(275, 100%, 97%) 100%
   );
 }
@@ -17,7 +17,7 @@ footer {
 h1 {
   color: hsl(292, 42%, 14%);
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
   font-size: 60px;
 }
@@ -26,52 +26,74 @@ h4 {
   font-size: 20px;
   color: hsl(292, 42%, 14%);
   font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 p {
+  padding-top: 16px;
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.faq {
+  max-width: 700px;
+  margin-top: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgb(219, 216, 216);
+  cursor: pointer;
+}
+
+.faq:hover {
+  cursor: pointer;
+}
+
+.faqs-body {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  margin-top: 100px;
+  border-radius: 10px;
+  max-width: 700px;
 }
 
 .plus-icon,
 .minus-icon {
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 60%;
   padding: 8px;
+  position: relative;
+  bottom: 2px;
+  color: white;
 }
 
 .minus-icon {
   background-color: hsl(292, 42%, 14%);
-  color: white;
 }
 
 .plus-icon {
   background-color: hsl(280, 80%, 55%);
-  color: white;
 }
 
-.icons-icons {
+.question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .faq-icon {
   color: hsl(280, 80%, 55%);
   font-size: 44px;
+  position: relative;
+  top: -6px;
 }
 
-.faq-icon-icon {
-  cursor: pointer;
-}
-.faq-icon-icon span {
-  margin: 0 5px;
+.answer {
+  height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
 }
 
-.non-active {
-  display: none;
+.faq.active .answer {
+  height: auto;
 }
 
 #svg-container {
@@ -81,14 +103,6 @@ p {
   transform: translateX(-50%);
   z-index: 1;
   color: hsl(292, 16%, 49%);
-}
-
-.faqs-body {
-  background-color: hsl(0, 0%, 100%);
-  padding: 40px;
-  margin-top: 200px;
-  border-radius: 10px;
-  max-width: 700px;
 }
 
 .attribution {
