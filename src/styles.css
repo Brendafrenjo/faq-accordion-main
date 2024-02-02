@@ -2,8 +2,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(
     hsl(292, 42%, 14%) 0%,
-    hsl(292, 42%, 14%) 40%,
-    hsl(275, 100%, 97%) 40%,
+    hsl(292, 42%, 14%) 45%,
+    hsl(275, 100%, 97%) 45%,
     hsl(275, 100%, 97%) 100%
   );
 }
@@ -40,11 +40,19 @@ footer {
   color: black;
 }
 
+#svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 .container {
   display: block;
   margin: 0 auto;
   padding: 40px;
-  margin-top: 100px;
+  margin-top: 150px;
   border-radius: 10px;
   max-width: 700px;
   background-color: hsl(0, 0%, 100%);
