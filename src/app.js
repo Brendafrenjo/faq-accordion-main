@@ -3,14 +3,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   faqs.forEach((faq) => {
     faq.addEventListener("click", () => {
-      faq.classList.toggle("active");
+      const isActive = faq.classList.toggle("active");
+
+      const plusIcon = question.querySelector(".plus-icon");
+      const minusIcon = question.querySelector(".minus-icon");
+
+      if (isActive) {
+        plusIcon.classList.add("visible");
+        minusIcon.classList.remove("hidden");
+      } else {
+        plusIcon.classList.remove("visible");
+        minusIcon.classList.add("hidden");
+      }
     });
   });
 });
-
-//margin: 0 auto;//
-//display: flex;
-//flex-direction: column;
-
-//margin-top: 20px;
-//margin-bottom: 12px;
+// <span><i class="fa-solid fa-minus minus-icon"></i></span>
