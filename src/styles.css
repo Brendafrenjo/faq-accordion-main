@@ -36,6 +36,12 @@ footer {
   color: black;
 }
 
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 #svg-container {
   position: absolute;
   top: 0;
@@ -62,7 +68,7 @@ footer {
 }
 
 .faq {
-  border-bottom: 2px solid rgb(219, 216, 216);
+  border-bottom: 2px solid hsl(0, 4%, 85%);
   margin-top: 32px;
   padding-bottom: 16px;
 }
@@ -121,4 +127,46 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .container {
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 30px;
+    margin-top: 50px;
+  }
+
+  .faq-icon {
+    font-size: 30px;
+    top: 0;
+  }
+
+  .plus-icon,
+  .minus-icon {
+    font-size: 10px;
+    padding: 7px;
+  }
+
+  .attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -18,4 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-// <span><i class="fa-solid fa-minus minus-icon"></i></span>
+
+//.question {
+    //display: grid;
+    //grid-template-rows: 1fr auto;
+    //align-items: flex-start;
+  //}
