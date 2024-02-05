@@ -129,11 +129,6 @@ svg {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 768px) {
-  .container {
-  }
-}
-
 @media (max-width: 576px) {
   h1 {
     font-size: 30px;
@@ -159,7 +154,7 @@ svg {
   .question {
     display: grid;
     grid-template-columns: 3fr auto;
-    grid-gap: 25px;
+    grid-gap: 35px;
     align-items: center;
   }
 
@@ -176,6 +171,9 @@ svg {
   .container {
     padding: 20px;
     margin: 20px;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
     margin-top: 50px;
   }
 
@@ -188,5 +186,11 @@ svg {
   .minus-icon {
     font-size: 10px;
     padding: 7px;
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    max-width: 250px;
   }
 }
