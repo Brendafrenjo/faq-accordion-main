@@ -140,12 +140,37 @@ svg {
   }
 
   p {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
   }
+
+  h4::before {
+    font-size: 16px;
+  }
+
+  .question {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  .faq-icons {
+    display: flex;
+    justify-content:flex-end
+  }
+
+.faq-icons::after {
+  margin-right: 0;
+  padding-right: 0;
+}
 
   .container {
     padding: 20px;
